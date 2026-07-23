@@ -199,7 +199,7 @@ export const projects: Project[] = [
     description:
       "A collaborative research initiative digitizing and analyzing historical HOLC redlining maps to understand their long-run effects on neighborhoods across the United States.",
     longDescription:
-      "The Redlining Lab brings together historians, planners, and data scientists to digitize, geocode, and analyze the full corpus of Home Owners' Loan Corporation (HOLC) appraisal maps from the 1930s and 1940s. By linking these historical documents to contemporary data on race, wealth, health, and opportunity, the lab investigates how mortgage discrimination inscribed in these maps continues to shape the geography of inequality in American cities.",
+      "The <a href=\"https://redlininglab.org\" target=\"_blank\" rel=\"noopener noreferrer\">Redlining Lab</a> is Kate Thomas (NYU), Thomas Storrs (University of Virginia), Wenfei Xu (UCSB), and Jacob Faber (NYU).\n\nBy linking historical Home Owners' Loan Corporation (HOLC) appraisal maps from the 1930s and 1940s to contemporary data on race, wealth, health, and opportunity, the lab investigates how mortgage discrimination inscribed in these maps continues to shape the geography of inequality in American cities.\n\nPlease visit our website at <a href=\"https://redlininglab.org\" target=\"_blank\" rel=\"noopener noreferrer\">redlininglab.org</a>.",
     team: ["Wenfei Xu"],
     tags: ["redlining", "housing discrimination", "historical GIS"],
     featured: true,

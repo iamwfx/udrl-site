@@ -94,9 +94,11 @@ export default function ProjectDetailPage({ params }: Props) {
             {project.title}
           </h1>
           {project.longDescription.split("\n\n").map((para, i) => (
-            <p key={i} className="text-base text-udrl-gray leading-tight mb-4">
-              {para}
-            </p>
+            <p
+              key={i}
+              className="text-base text-udrl-gray leading-tight mb-4 [&_a]:text-udrl-blue [&_a]:hover:underline"
+              dangerouslySetInnerHTML={{ __html: para }}
+            />
           ))}
         </div>
       </div>

@@ -234,20 +234,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* CONTACT */}
-      <section id="contact" className="py-16">
-        <h2 className="text-xl font-bold tracking-widest uppercase text-udrl-dark mb-8">
-          CONTACT
-        </h2>
-        <address className="not-italic text-base text-udrl-gray leading-tight">
-          <p className="font-semibold text-udrl-dark mb-2">Urban Data Research Lab</p>
-          Department of Geography<br />
-          UC Santa Barbara<br />
-          Ellison Hall 4818<br />
-          Santa Barbara, CA 93106
-        </address>
-      </section>
-
     </div>
   );
 }
