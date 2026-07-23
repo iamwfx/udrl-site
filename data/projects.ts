@@ -229,8 +229,8 @@ export const projects: Project[] = [
     description:
       "Using digitized deed records, tax assessments, and land transfer data to reconstruct the history of property ownership and trace the mechanisms of racial wealth extraction in American real estate.",
     longDescription:
-      "Property records are among the most complete archives of American economic history, yet they remain largely inaccessible at scale. This project develops methods to digitize, link, and analyze historical deed books, mortgage records, and tax rolls to reconstruct chains of title across entire cities. By tracking ownership histories, prices, and transaction patterns over decades, we uncover how racially restrictive covenants, predatory lending, and discriminatory appraisal practices transferred wealth away from communities of color and shaped the contemporary landscape of homeownership and housing equity.",
-    team: ["Wenfei Xu"],
+      "This is an ongoing collaboration with Kate Thomas (NYU), Jacob Faber (NYU), Thomas Storrs (University of Virginia), Omer Ali (University of Pittsburgh), Randy Walsh (University of Pittsburgh), Andy Ferrera (University of Pittsburgh), and Jonathan Rose (Federal Reserve Bank of Chicago).\n\nProperty records are among the most complete archives of American economic history, yet they remain largely inaccessible at scale. This project develops methods to digitize, link, and analyze historical deed books, mortgage records, and tax rolls to reconstruct chains of title across entire cities. By tracking ownership histories, prices, and transaction patterns over decades, we uncover how racially restrictive covenants, predatory lending, and discriminatory appraisal practices transferred wealth away from communities of color and shaped the contemporary landscape of homeownership and housing equity.",
+    team: ["Wenfei Xu", "Kate Thomas", "Jacob Faber", "Thomas Storrs", "Omer Ali", "Randy Walsh", "Andy Ferrera", "Jonathan Rose"],
     tags: ["land records", "property history", "housing discrimination"],
     featured: true,
     image: "/images/projects/land-records.jpg",

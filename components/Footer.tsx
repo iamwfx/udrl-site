@@ -9,8 +9,8 @@ export default function Footer() {
           <Image
             src="/images/UCSB_wordmark.svg"
             alt="UC Santa Barbara"
-            width={140}
-            height={44}
+            width={220}
+            height={69}
           />
         </a>
 
