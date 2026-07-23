@@ -39,3 +39,13 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# local content guide (not for repo)
+CONTENT_GUIDE.md
+
+# claude code local state
+.claude/
+
+# image backups from crop/edit sessions
+**/*-original.jpg
+**/*-original.png
