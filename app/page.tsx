@@ -50,7 +50,7 @@ export default function HomePage() {
     <div className="max-w-5xl mx-auto px-6">
 
       {/* HOME */}
-      <section id="home" className="py-16 md:py-20">
+      <section id="home" className="pt-16 md:pt-20 pb-6">
         <h1 className="text-3xl md:text-4xl leading-snug text-udrl-dark text-justify w-full">
           The Urban Data Research Lab uses novel big data and spatial data
           science to understand urban inequality at the scale of the
@@ -60,7 +60,7 @@ export default function HomePage() {
       </section>
 
       {/* Research Areas */}
-      <section className="pb-16">
+      <section className="pb-0">
         <details className="group">
           <summary className="text-base text-udrl-gray mb-6 cursor-pointer list-none flex flex-col items-center gap-1 hover:text-udrl-dark transition-colors text-center">
             <span>Learn more about our primary areas of research</span>
@@ -95,7 +95,7 @@ export default function HomePage() {
       </section>
 
       {/* NEWS */}
-      <section id="news" className="py-16">
+      <section id="news" className="pt-16 pb-16 scroll-mt-20">
         <h2 className="text-xl font-bold tracking-widest uppercase text-udrl-dark mb-8">
           NEWS
         </h2>
@@ -113,7 +113,7 @@ export default function HomePage() {
       </section>
 
       {/* PROJECTS */}
-      <section id="projects" className="py-16">
+      <section id="projects" className="py-16 scroll-mt-20">
         <h2 className="text-xl font-bold tracking-widest uppercase text-udrl-dark mb-8">
           PROJECTS
         </h2>
@@ -121,7 +121,7 @@ export default function HomePage() {
       </section>
 
       {/* PUBLICATIONS */}
-      <section id="publications" className="py-16">
+      <section id="publications" className="py-16 scroll-mt-20">
         <h2 className="text-xl font-bold tracking-widest uppercase text-udrl-dark mb-8">
           PUBLICATIONS
         </h2>
@@ -170,7 +170,7 @@ export default function HomePage() {
       </section>
 
       {/* COURSES */}
-      <section id="courses" className="py-16">
+      <section id="courses" className="py-16 scroll-mt-20">
         <h2 className="text-xl font-bold tracking-widest uppercase text-udrl-dark mb-8">
           COURSES
         </h2>
@@ -178,7 +178,7 @@ export default function HomePage() {
       </section>
 
       {/* PEOPLE */}
-      <section id="people" className="py-16">
+      <section id="people" className="py-16 scroll-mt-20">
         <h2 className="text-xl font-bold tracking-widest uppercase text-udrl-dark mb-8">
           PEOPLE
         </h2>
