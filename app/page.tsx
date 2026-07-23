@@ -180,18 +180,11 @@ export default function HomePage() {
         {director && (
           <div className="grid md:grid-cols-4 gap-10 mb-12">
             <div className="md:col-span-3">
-              <p className="text-base text-udrl-gray leading-tight text-justify mb-6">
-                {director.bio}
-              </p>
+              <p
+                className="text-base text-udrl-gray leading-tight text-justify mb-6"
+                dangerouslySetInnerHTML={{ __html: director.bio ?? "" }}
+              />
               <div className="flex flex-wrap gap-3">
-                {director.email && (
-                  <a
-                    href={`mailto:${director.email}`}
-                    className="text-base border border-udrl-border px-4 py-1.5 text-udrl-dark hover:border-udrl-dark transition-colors"
-                  >
-                    {director.email}
-                  </a>
-                )}
                 <a
                   href="https://www.dropbox.com/scl/fi/fazva78uwhr3uwl80ef1l/CV_wenfeixu.pdf?rlkey=exdxmt1z49c20iharo16r7cy8&dl=0"
                   target="_blank"
@@ -246,43 +239,13 @@ export default function HomePage() {
         <h2 className="text-xl font-bold tracking-widest uppercase text-udrl-dark mb-8">
           CONTACT
         </h2>
-        <div className="grid md:grid-cols-2 gap-12">
-          <div>
-            <address className="not-italic text-base text-udrl-gray leading-tight">
-              <p className="font-semibold text-udrl-dark mb-2">Urban Data Research Lab</p>
-              Department of Geography<br />
-              UC Santa Barbara<br />
-              Ellison Hall 4818<br />
-              Santa Barbara, CA 93106
-            </address>
-          </div>
-          <div>
-            <p className="text-base text-udrl-gray mb-2">Email</p>
-            <a
-              href="mailto:wenfeixu@ucsb.edu"
-              className="text-base text-udrl-blue hover:underline"
-            >
-              wenfeixu@ucsb.edu
-            </a>
-            <div className="mt-8">
-              <p className="text-base text-udrl-gray mb-2">Affiliated With</p>
-              <ul className="space-y-1 text-base">
-                <li>
-                  <a href="https://www.geog.ucsb.edu/" target="_blank" rel="noopener noreferrer"
-                    className="text-udrl-blue hover:underline">
-                    Department of Geography, UC Santa Barbara
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.ucsb.edu/" target="_blank" rel="noopener noreferrer"
-                    className="text-udrl-blue hover:underline">
-                    University of California, Santa Barbara
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
+        <address className="not-italic text-base text-udrl-gray leading-tight">
+          <p className="font-semibold text-udrl-dark mb-2">Urban Data Research Lab</p>
+          Department of Geography<br />
+          UC Santa Barbara<br />
+          Ellison Hall 4818<br />
+          Santa Barbara, CA 93106
+        </address>
       </section>
 
     </div>
