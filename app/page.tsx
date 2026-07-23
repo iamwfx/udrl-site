@@ -61,32 +61,55 @@ export default function HomePage() {
 
       {/* Research Areas */}
       <section className="pb-16">
-        <p className="text-base text-udrl-gray mb-6">Our primary areas of research are:</p>
-        <div className="grid md:grid-cols-2 gap-10">
-          {researchAreas.map((area) => (
-            <div key={area.title}>
-              {area.image && (
-                <div className="w-full aspect-video relative overflow-hidden mb-1">
-                  <Image src={area.image} alt={area.title} fill className="object-cover" style={{ objectPosition: area.objectPosition }} sizes="(max-width: 768px) 100vw, 50vw" />
-                </div>
-              )}
-              {area.credit && (
-                <p className="text-xs text-udrl-gray mb-3">
-                  <a
-                    href={area.credit.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hover:text-udrl-dark"
-                  >
-                    {area.credit.text}
-                  </a>
-                </p>
-              )}
-              <h3 className="text-base font-bold mb-3 text-udrl-dark">{area.title}</h3>
-              <p className="text-base text-udrl-gray leading-tight text-justify">{area.description}</p>
-            </div>
-          ))}
-        </div>
+        <details className="group">
+          <summary className="text-base text-udrl-gray mb-6 cursor-pointer list-none flex flex-col items-center gap-1 hover:text-udrl-dark transition-colors text-center">
+            <span>Learn more about our primary areas of research</span>
+            <span className="inline-block transition-transform group-open:rotate-180 text-lg leading-none">▾</span>
+          </summary>
+          <div className="grid md:grid-cols-2 gap-10 mt-6">
+            {researchAreas.map((area) => (
+              <div key={area.title}>
+                {area.image && (
+                  <div className="w-full aspect-video relative overflow-hidden mb-1">
+                    <Image src={area.image} alt={area.title} fill className="object-cover" style={{ objectPosition: area.objectPosition }} sizes="(max-width: 768px) 100vw, 50vw" />
+                  </div>
+                )}
+                {area.credit && (
+                  <p className="text-xs text-udrl-gray mb-3">
+                    <a
+                      href={area.credit.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-udrl-dark"
+                    >
+                      {area.credit.text}
+                    </a>
+                  </p>
+                )}
+                <h3 className="text-base font-bold mb-3 text-udrl-dark">{area.title}</h3>
+                <p className="text-base text-udrl-gray leading-tight text-justify">{area.description}</p>
+              </div>
+            ))}
+          </div>
+        </details>
+      </section>
+
+      {/* NEWS */}
+      <section id="news" className="py-16">
+        <h2 className="text-xl font-bold tracking-widest uppercase text-udrl-dark mb-8">
+          NEWS
+        </h2>
+        <NewsGrid items={newsItems.slice(0, RECENT_NEWS_COUNT)} />
+        {newsItems.length > RECENT_NEWS_COUNT && (
+          <div className="mt-10">
+            <Link
+              href="/news"
+              className="text-base text-udrl-dark hover:text-udrl-blue underline underline-offset-4"
+            >
+              See all news →
+            </Link>
+          </div>
+        )}
       </section>
 
       {/* PROJECTS */}
@@ -95,14 +118,6 @@ export default function HomePage() {
           PROJECTS
         </h2>
         <ProjectsGrid projects={sortedProjects} />
-      </section>
-
-      {/* COURSES */}
-      <section id="courses" className="py-16">
-        <h2 className="text-xl font-bold tracking-widest uppercase text-udrl-dark mb-8">
-          COURSES
-        </h2>
-        <CoursesGrid courses={courses} />
       </section>
 
       {/* PUBLICATIONS */}
@@ -154,22 +169,12 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* NEWS */}
-      <section id="news" className="py-16">
+      {/* COURSES */}
+      <section id="courses" className="py-16">
         <h2 className="text-xl font-bold tracking-widest uppercase text-udrl-dark mb-8">
-          NEWS
+          COURSES
         </h2>
-        <NewsGrid items={newsItems.slice(0, RECENT_NEWS_COUNT)} />
-        {newsItems.length > RECENT_NEWS_COUNT && (
-          <div className="mt-10">
-            <Link
-              href="/news"
-              className="text-base text-udrl-dark hover:text-udrl-blue underline underline-offset-4"
-            >
-              See all news →
-            </Link>
-          </div>
-        )}
+        <CoursesGrid courses={courses} />
       </section>
 
       {/* PEOPLE */}

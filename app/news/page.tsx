@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import NewsGrid from "@/components/NewsGrid";
 import { newsItems } from "@/data/news";
 
 export const metadata: Metadata = { title: "News" };
@@ -13,29 +14,10 @@ export default function NewsPage() {
       >
         ← Back to home
       </Link>
-      <h1 className="text-xs font-bold tracking-widest uppercase text-udrl-dark mt-10 mb-10">
+      <h1 className="text-xl font-bold tracking-widest uppercase text-udrl-dark mt-10 mb-8">
         NEWS
       </h1>
-
-      <div className="grid md:grid-cols-2 gap-x-12 gap-y-10">
-        {newsItems.map((item, i) => (
-          <div key={i}>
-            <h2 className="text-sm font-bold mb-1 text-udrl-dark">{item.title}</h2>
-            <p className="text-xs text-udrl-gray mb-2">{item.date}</p>
-            <p className="text-sm text-udrl-gray leading-relaxed text-justify">{item.description}</p>
-            {item.url && (
-              <a
-                href={item.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-2 inline-block text-sm text-udrl-blue hover:underline"
-              >
-                Learn More
-              </a>
-            )}
-          </div>
-        ))}
-      </div>
+      <NewsGrid items={newsItems} />
     </div>
   );
 }

@@ -7,12 +7,11 @@ import { usePathname, useRouter } from "next/navigation";
 
 const navLinks = [
   { href: "#home", label: "HOME" },
-  { href: "#projects", label: "PROJECTS" },
-  { href: "#courses", label: "COURSES" },
-  { href: "#publications", label: "PUBLICATIONS" },
   { href: "#news", label: "NEWS" },
+  { href: "#projects", label: "PROJECTS" },
+  { href: "#publications", label: "PUBLICATIONS" },
+  { href: "#courses", label: "COURSES" },
   { href: "#people", label: "PEOPLE" },
-  { href: "#contact", label: "CONTACT" },
 ];
 
 const sectionIds = navLinks.map((l) => l.href.replace("#", ""));

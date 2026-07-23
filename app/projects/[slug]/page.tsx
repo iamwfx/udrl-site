@@ -109,9 +109,21 @@ export default function ProjectDetailPage({ params }: Props) {
           <h2 className="text-xs font-bold uppercase tracking-widest text-udrl-dark mb-6">
             Publications
           </h2>
-          <div className="grid md:grid-cols-2 gap-x-12 gap-y-6">
-            {project.papers.map((paper, i) => (
-              <div key={i}>
+          <div className="columns-1 md:columns-2 gap-x-12">
+            {[...project.papers].sort((a, b) => b.year - a.year).map((paper, i) => (
+              <div key={i} className="break-inside-avoid mb-10">
+                {paper.image && (
+                  <div className="w-full aspect-video relative overflow-hidden mb-3 bg-udrl-border">
+                    <Image
+                      src={paper.image}
+                      alt={paper.title}
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                      unoptimized
+                    />
+                  </div>
+                )}
                 <p className="text-base font-bold text-udrl-dark leading-tight mb-0.5">
                   {paper.title}
                 </p>
@@ -121,6 +133,15 @@ export default function ProjectDetailPage({ params }: Props) {
                 <p className="text-base text-udrl-gray italic leading-tight mb-1">
                   {paper.journal}, {paper.year}
                 </p>
+                {paper.abstract &&
+                  paper.abstract.split("\n\n").map((para, j) => (
+                    <p
+                      key={j}
+                      className="text-base text-udrl-gray leading-tight mt-2 mb-2"
+                    >
+                      {para}
+                    </p>
+                  ))}
                 {paper.doi && (
                   <a
                     href={paper.doi}
@@ -132,7 +153,7 @@ export default function ProjectDetailPage({ params }: Props) {
                   </a>
                 )}
                 {!paper.doi && paper.draftAvailable && (
-                  <span className="text-sm text-udrl-gray italic block mb-1.5">
+                  <span className="text-base text-udrl-gray italic block mb-1.5">
                     Draft available upon request
                   </span>
                 )}
