@@ -226,14 +226,14 @@ export default function HomePage() {
         {currentMembers.length > 0 && (
           <div className="mb-8">
             <h3 className="text-base font-bold uppercase tracking-widest text-udrl-dark mb-6">
-              Current People
+              People
             </h3>
             <PeopleGrid members={currentMembers} />
           </div>
         )}
         <div>
           <h3 className="text-base font-bold uppercase tracking-widest text-udrl-dark mb-4">
-            Past People
+            Past
           </h3>
           <p className="text-base text-udrl-gray leading-tight">{pastMembers.join(", ")}</p>
         </div>

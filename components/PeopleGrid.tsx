@@ -5,8 +5,8 @@ export default function PeopleGrid({ members }: { members: Person[] }) {
   return (
     <div className="flex flex-col gap-10">
       {members.map((person) => (
-        <div key={person.name} className="flex gap-6 items-start">
-          <div className="w-56 shrink-0 aspect-square overflow-hidden relative">
+        <div key={person.name} className="flex flex-col md:flex-row gap-4 md:gap-6 items-start">
+          <div className="w-40 md:w-56 shrink-0 aspect-square overflow-hidden relative">
             {person.image ? (
               <Image
                 src={person.image}

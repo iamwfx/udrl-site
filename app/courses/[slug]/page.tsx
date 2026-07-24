@@ -52,15 +52,6 @@ export default function CourseDetailPage({ params }: Props) {
             </div>
           )}
 
-          <div className="space-y-1 mb-6 text-base text-udrl-gray leading-tight">
-            {course.number && <p><span className="font-bold text-udrl-dark">Course</span> {course.number}</p>}
-            {course.institution && <p><span className="font-bold text-udrl-dark">Institution</span> {course.institution}</p>}
-            {course.semester && <p><span className="font-bold text-udrl-dark">Semester</span> {course.semester}</p>}
-            {course.schedule && <p><span className="font-bold text-udrl-dark">Schedule</span> {course.schedule}</p>}
-            {course.units && <p><span className="font-bold text-udrl-dark">Units</span> {course.units}</p>}
-            {course.location && <p><span className="font-bold text-udrl-dark">Location</span> {course.location}</p>}
-          </div>
-
           <div className="flex flex-wrap gap-3">
             {course.tutorialsUrl && (
               <a
