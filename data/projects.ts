@@ -224,11 +224,14 @@ export const projects: Project[] = [
     image: "/images/projects/redlining-lab.png",
     papers: [
       {
-        title: "New Evidence on Race and Nativity in New Deal Mortgage Programs",
+        title: "New-deal mortgage programmes benefited white borrowers disproportionately",
         authors: "Thomas, K., Storrs, T., Xu, W., Faber, J.",
-        journal: "Nature (accepted)",
+        journal: "Nature",
         year: 2026,
+        doi: "https://doi.org/10.1038/s41586-026-10850-8",
         tags: ["redlining", "New Deal", "mortgage discrimination"],
+        abstract:
+          "We show that the Federal Housing Administration (FHA) and Veterans' Administration (VA) mortgage programmes had few Black borrowers and proportionate foreign-born borrowers in their early years. Although scholars have long posited that the beneficiaries of these programmes were disproportionately white, evidence of the identities of these early borrowers was scant and lacking information on their nativity.\n\nHere we fill this void by linking records from the Reconstruction Finance Corporation Mortgage Company (RFCMC), consisting of 29,921 FHA-insured and VA-guaranteed loans from 1935 to 1947, to Census data.\n\nAlthough the population of the USA was 9.9% Black in 1940, we find that only 2.1% of FHA-insured loans and 5.1% of VA-guaranteed loans went to Black borrowers. We also show that immigrants were proportionally represented in FHA lending (10.0% of loans) relative to their share of the population and in VA lending (2.2% of loans) relative to their share of Second World War veterans.\n\nOur results indicate substantial racial inequality in the two foundational homeownership policies in the USA. We anticipate our findings to be a starting point for nascent scholarship exploring the roles of FHA and VA lending in shaping racial disparities in access to homeownership and related outcomes, such as neighbourhood attainment and wealth.",
       },
       {
         title: "Revisiting the Measurement of Redlining: Comparative Evidence from FHA and HOLC Maps",
@@ -280,8 +283,9 @@ export const projects: Project[] = [
       {
         title: "Where did they go after HOPE VI? A longitudinal study of long-term neighborhood attainment outcomes in Chicago",
         authors: "Xu, W., Lee, Y., Lei, Y., Zhou, Z., Zhang, Y., Freeman, L.",
-        journal: "Housing Policy Debate (accepted)",
+        journal: "Housing Policy Debate, 1–28",
         year: 2026,
+        doi: "https://doi.org/10.1080/10511482.2026.2688182",
         tags: ["public housing", "HOPE VI", "displacement"],
         abstract:
           "This study examines the long-term residential outcomes of Chicago public housing residents displaced by the HOPE VI program, which demolished distressed developments and redeveloped some into mixed-income communities.\n\nUsing individual residential history data from 1980 to 2021 and administrative data on subsidized housing, we examine where displaced residents moved to, how the neighborhood characteristics of HOPE VI displacees compare with those of similar but voluntary movers, and, among HOPE VI displacees, how outcomes differ by relocation housing type — traditional subsidized housing, new mixed-income housing, or the private market.\n\nOur study finds that HOPE VI displacement had the effect of moving residents into neighborhoods with higher Black population shares, lower median incomes, and lower educational attainment compared to the neighborhood environments of the control group. Among relocatees, fewer than 10% accessed mixed-income redevelopments; these residents experienced slightly fewer moves and eventually improved neighborhood outcomes in education and racial composition. Private-market movers saw short-term neighborhood-level gains in income and racial integration that dissipated over time.",

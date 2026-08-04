@@ -10,6 +10,35 @@ export interface NewsItem {
 
 export const newsItems: NewsItem[] = [
   {
+    slug: "welcome-saad",
+    title: "Welcome, Saad!",
+    date: "July 2026",
+    description:
+      "Saad Mohammad Abrar is joining the lab as a postdoctoral scholar. Coming from a Ph.D. in Computer Science at the University of Maryland, his work asks whether mobility and behavioral data — and the models built from them — are actually reliable, fair, and valid for high-stakes public decision-making.",
+    details:
+      "We're thrilled to welcome Saad Mohammad Abrar to the Urban Data Research Lab as a postdoctoral scholar at UC Santa Barbara. Saad earned his M.S. and Ph.D. in Computer Science from the University of Maryland, where his research focused on evaluating whether mobility and behavioral data — and the models built from them — are reliable, fair, and valid for high-stakes public decision-making. His work sits right at the intersection of what the lab cares about: using new data sources to answer urban and social questions, while taking seriously the question of when those data actually can (and can't) be trusted for policy.",
+  },
+  {
+    slug: "nature-new-deal-mortgages",
+    title: "New Paper in Nature: New Deal mortgage programs benefited white borrowers disproportionately",
+    date: "July 2026",
+    description:
+      "Our paper with Kate Thomas, Thomas Storrs, and Jacob Faber came out in Nature. Using newly digitized archival records from FHA and VA mortgage programs, we show just how lopsidedly these New Deal-era programs channeled homeownership and wealth toward white borrowers.",
+    details:
+      "\"New-deal mortgage programmes benefited white borrowers disproportionately\" was published in Nature in July 2026. Coauthored with Kate Thomas (NYU), Thomas Storrs (University of Virginia), and Jacob Faber (NYU), the paper draws on newly digitized archival materials from the Federal Housing Administration and the Veterans Administration — programs that have been relatively understudied compared to the Home Owners' Loan Corporation's redlining maps — to quantify how disproportionately their loan guarantees flowed to white borrowers. The findings sharpen the empirical case for how mid-twentieth-century federal housing policy shaped the contemporary racial wealth gap.",
+    url: "https://doi.org/10.1038/s41586-026-10850-8",
+  },
+  {
+    slug: "hpd-hope-vi",
+    title: "New Paper in Housing Policy Debate: Where did they go after HOPE VI?",
+    date: "July 2026",
+    description:
+      "Our HOPE VI paper came out in Housing Policy Debate. Using individual residential histories from 1980 to 2021, we follow displaced Chicago public housing residents to see where they actually ended up — and whose promises of \"better\" neighborhoods held up over time.",
+    details:
+      "\"Where did they go after HOPE VI? A longitudinal study of long-term neighborhood attainment outcomes in Chicago\" was published in Housing Policy Debate in July 2026. Using individual residential history data from 1980 to 2021 and administrative data on subsidized housing, we track displaced Chicago public housing residents into their new neighborhoods and compare them to matched voluntary movers. On average, HOPE VI displacement pushed residents into neighborhoods with higher Black population shares, lower incomes, and lower educational attainment than the control group. Fewer than 10% of relocatees ended up in mixed-income redevelopments — those who did saw the most sustained gains in neighborhood conditions. Private-market movers saw short-term gains in income and racial integration that dissipated over time. Coauthored with Yeonhwa Lee, Yining Lei, Zihao Zhou, Yucheng Zhang, and Lance Freeman.",
+    url: "https://doi.org/10.1080/10511482.2026.2688182",
+  },
+  {
     slug: "newpicture-launched",
     title: "A New Picture of Segregation is live",
     date: "July 2026",

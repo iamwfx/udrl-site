@@ -24,6 +24,14 @@ export const people: Person[] = [
     image: "/images/people/wenfei-xu.jpg",
   },
   {
+    name: "Saad Mohammad Abrar",
+    title: "Postdoctoral Scholar, UC Santa Barbara",
+    bio: "Saad Mohammad Abrar is a postdoctoral scholar at the University of California, Santa Barbara. He earned his M.S. and Ph.D. in Computer Science from the University of Maryland, where his research focused on evaluating whether mobility and behavioral data — and the models built from them — are reliable, fair, and valid for high-stakes public decision-making.",
+    website: "https://saad-abrar.github.io/",
+    image: "/images/people/saad-mohammad-abrar.jpg",
+    current: true,
+  },
+  {
     name: "Houpu Li",
     title: "Ph.D. Student, Geography, UC Santa Barbara",
     bio: "Houpu Li is a Ph.D. student in Geography at UC Santa Barbara. He holds a Master's in Regional Science from Cornell University. His research focuses on quantitative urban spatial data analysis.",

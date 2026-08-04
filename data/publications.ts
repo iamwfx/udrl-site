@@ -10,6 +10,23 @@ export interface Publication {
 }
 
 export const publications: Publication[] = [
+  // 2026
+  {
+    title: "New-deal mortgage programmes benefited white borrowers disproportionately",
+    authors: "Thomas, K., Storrs, T., Xu, W., Faber, J.",
+    journal: "Nature",
+    year: 2026,
+    doi: "https://doi.org/10.1038/s41586-026-10850-8",
+    tags: ["redlining", "New Deal", "mortgage discrimination"],
+  },
+  {
+    title: "Where Did They Go After HOPE VI? A Longitudinal Study of Long-Term Neighborhood Attainment Outcomes in Chicago",
+    authors: "Xu, W., Lee, Y., Lei, Y., Zhou, Z., Zhang, Y., Freeman, L.",
+    journal: "Housing Policy Debate, 1–28",
+    year: 2026,
+    doi: "https://doi.org/10.1080/10511482.2026.2688182",
+    tags: ["public housing", "HOPE VI", "displacement"],
+  },
   // 2025
   {
     title: "A research agenda for GIScience in a time of disruptions",
