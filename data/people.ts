@@ -39,6 +39,14 @@ export const people: Person[] = [
     image: "/images/people/houpu-li.jpg",
   },
   {
+    name: "Hongqian Li",
+    title: "Ph.D. Student, Geography, UC Santa Barbara",
+    bio: "Hongqian Li is a Ph.D. student in Geography at UC Santa Barbara. He holds a Master's in Computational Design Practices from Columbia University. His work focuses on how emerging artificial intelligence, algorithms, and data-driven technologies can advance geospatial research and analysis, as well as how their applications affect social equity and the environment.",
+    website: "https://www.linkedin.com/in/hongqian-l-012167130",
+    image: "/images/people/hongqian-li.jpg",
+    current: true,
+  },
+  {
     name: "Fiona Liang",
     title: "Undergraduate Student, Sociology and Geography, UC Santa Barbara",
     bio: "Fiona Liang is an undergraduate student at University of California, Santa Barbara studying sociology and geography. Her research interests center on the relationship between space and human activity, particularly on how race informs geographic processes such as through segregation and gentrification. She is excited to contribute to the Urban Data Research Lab's work examining these critical issues.",
