@@ -5,6 +5,8 @@ import { projects } from "@/data/projects";
 const RECENT_NEWS_COUNT = 6;
 import ProjectsGrid from "@/components/ProjectsGrid";
 import PeopleGrid from "@/components/PeopleGrid";
+import DirectorBlock from "@/components/DirectorBlock";
+import HashScroll from "@/components/HashScroll";
 import CoursesGrid from "@/components/CoursesGrid";
 import NewsGrid from "@/components/NewsGrid";
 import { courses } from "@/data/courses";
@@ -48,6 +50,8 @@ const researchAreas = [
 export default function HomePage() {
   return (
     <div className="max-w-5xl mx-auto px-6">
+
+      <HashScroll />
 
       {/* HOME */}
       <section id="home" className="pt-16 md:pt-20 pb-6">
@@ -182,47 +186,7 @@ export default function HomePage() {
         <h2 className="text-xl font-bold tracking-widest uppercase text-udrl-dark mb-8">
           PEOPLE
         </h2>
-        {director && (
-          <div className="grid md:grid-cols-4 gap-10 mb-12">
-            <div className="md:col-span-3">
-              <p
-                className="text-base text-udrl-gray leading-tight text-justify mb-6"
-                dangerouslySetInnerHTML={{ __html: director.bio ?? "" }}
-              />
-              <div className="flex flex-wrap gap-3">
-                <a
-                  href="https://www.dropbox.com/scl/fi/fazva78uwhr3uwl80ef1l/CV_wenfeixu.pdf?rlkey=exdxmt1z49c20iharo16r7cy8&dl=0"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-base border border-udrl-border px-4 py-1.5 text-udrl-dark hover:border-udrl-dark transition-colors"
-                >
-                  CV
-                </a>
-                {director.scholarUrl && (
-                  <a
-                    href={director.scholarUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-base border border-udrl-border px-4 py-1.5 text-udrl-dark hover:border-udrl-dark transition-colors"
-                  >
-                    Google Scholar
-                  </a>
-                )}
-              </div>
-            </div>
-            <div className="flex flex-col gap-4 items-start md:col-span-1">
-              {director.image && (
-                <div className="w-full aspect-square overflow-hidden relative">
-                  <Image src={director.image} alt={director.name} fill className="object-cover object-top" sizes="(max-width: 768px) 100vw, 25vw" />
-                </div>
-              )}
-              <div className="text-center w-full">
-                <p className="text-lg font-bold text-udrl-dark leading-tight">{director.name}</p>
-                <p className="text-base text-udrl-gray leading-tight">Director, Urban Data Research Lab</p>
-              </div>
-            </div>
-          </div>
-        )}
+        {director && <DirectorBlock director={director} />}
         {currentMembers.length > 0 && (
           <div className="mb-8">
             <h3 className="text-base font-bold uppercase tracking-widest text-udrl-dark mb-6">
